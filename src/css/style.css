@@ -1,21 +1,28 @@
-/* @media screen and (max-width: 1023px) {
-    .navbar-brand .navbar-item{
-        
-        width: 90;
-        padding-left: 40%;
-        padding-right: 40%;
-    }
-} */
 
-/* .navbar-item{
-    border: 1px solid red;
-} */
+/* FIRST SETUP */
 
-body{
+html{
     margin: 0;
     padding: 0;
+    font-size: 20px;
 }
 
+.columns{
+    padding: 0 !important;
+}
+.columns{
+    margin: 0 !important;
+}
+.column{
+    padding: 0 !important;
+}
+.column{
+    margin: 0 !important;
+}
+
+/* -------------------------------- */
+
+/* TOP CAROUSEL */
 .owl-carousel{
     position: relative;
   }
@@ -45,18 +52,9 @@ body{
     background-color: #df0000 !important;
 }
 
-.columns{
-    padding: 0 !important;
-}
-.columns{
-    margin: 0 !important;
-}
-.column{
-    padding: 0 !important;
-}
-.column{
-    margin: 0 !important;
-}
+/* --------------------------------------------- */
+
+/* TOP PRODUCT */
 
 .row{
     /* margin-top: 2.5px !important;
@@ -108,3 +106,92 @@ body{
         font-size: 20px;
     }
   }
+/* -------------------------------------------- */
+
+/* CREATIVE SECTION */
+.creattive-section{
+    height: 500px;
+    background-image: linear-gradient(45deg, rgba(2,33,64,0.2) 55%, rgba(45,95,93,0.3)), url(../img/create-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    transition: all 3s;
+}
+
+
+.creative{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.creattive-section .columns, h1{
+    margin: 0 auto !important;
+    text-align: center;
+}
+
+.creattive-section h1{
+    color: gray;
+    background-color: white;
+}
+
+.btn{
+    text-align: center;
+}
+
+.support-section .register-img{
+    background-image: linear-gradient(45deg, rgba(2,33,64,0.2) 55%, rgba(45,95,93,0.3)), url(../img/register.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.support-section .support-img{
+    background-image: linear-gradient(45deg, rgba(2,33,64,0.2) 55%, rgba(45,95,93,0.3)), url(../img/support.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.support-item{
+    width: 90%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+}
+.support-item h4{
+    font-size: 20px;
+}
+.support-item p{
+    font-size: 15px !important;
+}
+
+.center-item{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image:hover{
+    filter: brightness(1.2);
+    transition: all .5s;
+}
+
+
+/* FOOTER */
+.foot-title{
+    color: white;
+    font-weight: 400;
+}
+.foot-contents li a{
+    color: rgb(148, 148, 148);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+hr{
+    border-width: 1px;
+}
