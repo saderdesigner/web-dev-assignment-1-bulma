@@ -1,0 +1,110 @@
+/* @media screen and (max-width: 1023px) {
+    .navbar-brand .navbar-item{
+        
+        width: 90;
+        padding-left: 40%;
+        padding-right: 40%;
+    }
+} */
+
+/* .navbar-item{
+    border: 1px solid red;
+} */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.owl-carousel{
+    position: relative;
+  }
+  
+.owl-dots{
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 0%;
+    
+}
+
+#top-carousel .owl-dots .owl-dot span{
+    width: 50px !important;
+    height: 2px !important;
+    background-color: #5a5a5a !important;
+    
+}
+#top-carousel .owl-dots .owl-dot.active span{
+    width: 50px !important;
+    height: 4px !important;
+    background-color: #df0000 !important;
+}
+#top-carousel .owl-dots .owl-dot span:hover{
+    width: 50px !important;
+    height: 4px !important;
+    background-color: #df0000 !important;
+}
+
+.columns{
+    padding: 0 !important;
+}
+.columns{
+    margin: 0 !important;
+}
+.column{
+    padding: 0 !important;
+}
+.column{
+    margin: 0 !important;
+}
+
+.row{
+    /* margin-top: 2.5px !important;
+    margin-bottom: 2.5px !important; */
+    padding: 2.5px !important;
+}
+.col{
+    padding: 2.5px !important;
+}
+
+.top-product{
+    position: relative;
+}
+
+.top-product-title{
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+@media only screen and (max-width: 1023px) {
+    .top-product-title{
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translate(0, -50%);
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .top-product-title{
+        width: 100%;
+        z-index: 10;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: white;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+  }
