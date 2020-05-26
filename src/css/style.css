@@ -1,9 +1,29 @@
+/* REUSEABLE */
+.bg-dark{
+    background-color: #121212;
+}
 
+.font-16{
+    font-size: 16px;
+}
+
+.center-v{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 5;
+}
+.center-h{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, 0);
+}
 /* FIRST SETUP */
 
 html{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
 
@@ -182,6 +202,9 @@ html{
 
 
 /* FOOTER */
+.footer{
+    padding-bottom: 1.5rem !important;
+}
 .foot-title{
     color: white;
     font-weight: 400;
@@ -195,3 +218,159 @@ html{
 hr{
     border-width: 1px;
 }
+
+.foot-logo{
+    width: 50px;
+    display: inline-block;
+}
+
+.copyright-section{
+    border-top: 1px solid white;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.copyright-section .columns{
+    margin-top: 10px !important;
+}
+
+.copyright-section p{
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+/* -----------------------------------model img -----------------------------------*/
+.model-img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .model-img:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+/* ---------About us---------- */
+.left-menu h1{
+    color: white;
+    margin-top: 2rem !important;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.left-menu ul li{
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.left-menu ul li a{
+    color: white;
+}
+.left-menu ul li a:hover, .left-menu ul li a:active{
+    color: white;
+    margin-left: 10px;
+}
+article{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+article h1{
+    color: #fd010c !important;
+}
+
+article p{
+    text-align: justify;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    color: #797979;
+    font-weight: 500;
+    line-height: 1rem ;
+}
+
+article h4{
+    padding-left: 1rem;
+    margin-bottom: 0.3rem !important;
+    color: white !important;
+}
+
+.sticky {
+    position: fixed;
+    top: 1%;
+    width: 100%;
+  }
