@@ -146,7 +146,7 @@ html{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.creattive-section .columns, h1{
+.creattive-section .columns, .creattive-section h1{
     margin: 0 auto !important;
     text-align: center;
 }
@@ -246,45 +246,38 @@ hr{
     transition: 0.3s;
   }
   
-  .model-img:hover {opacity: 0.7;}
+.model-img:hover {opacity: 0.7;}
   
   /* The Modal (background) */
-  .modal {
+.modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    padding-top: 0%; /* Location of the box */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 570px; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
+    
+}
   
   /* Modal Content (image) */
-  .modal-content {
+.modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
-  }
+    width: 100%;
+    max-width: 400px;
+}
   
   /* Caption of Modal Image */
-  #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-  }
+
   
   /* Add Animation */
-  .modal-content, #caption {  
+.modal-content{  
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -303,13 +296,14 @@ hr{
   
   /* The Close Button */
   .close {
+    z-index: 2;
     position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
+    top: -20px;
+    right:0px;
+    color: #fd010c;
     font-size: 40px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.6s;
   }
   
   .close:hover,
@@ -373,4 +367,44 @@ article h4{
     position: fixed;
     top: 1%;
     width: 100%;
+}
+
+  /* Contact */
+.contact-us{
+      margin-top: 2rem;
+      font-size: 16px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+}
+.contact-us h1{
+      color: #fd010c;
+      font-weight: bold;
+      font-size: 20px;
+}
+.contact-us p{
+      line-height: 1.5rem;
+}
+.is-boxed{
+      margin-top: 2rem;
+}
+.is-boxed a:hover, .is-boxed a:active{
+      background-color: #fd010c !important;
+      color: white;
+      border-bottom: 1px solid #fd010c !important;
   }
+.tabs ul{
+    border-bottom: 1px solid red;
+}
+.tabs li.is-active a{
+    background-color: #fd010c !important;
+    border: none !important;
+    border-bottom: 1px solid #fd010c !important;
+    color: white !important;
+}
+.contact-us .content{
+    height: 60vh;
+    color: #797979;
+}
+.country h4, .country h6{
+    color: white;
+}

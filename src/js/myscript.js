@@ -41,51 +41,41 @@ var img_7 = document.getElementById("iso-7");
 var img_8 = document.getElementById("iso-8");
 var img_9 = document.getElementById("iso-9");
 var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
 img_1.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
 }
 img_2.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
 }
 img_3.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
 }
 img_4.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
 }
 img_5.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
 }
 img_6.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
 }
 img_7.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
 }
 img_8.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
 }
 img_9.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
 }
 
 
@@ -113,17 +103,42 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 // Stick memu-------------------------------------------------
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {smoothScroll()};
 
 var navbar = document.getElementById("menu-option");
 var sticky = navbar.offsetTop;
 
-function myFunction() {
+function smoothScroll() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
   }
 }
+
+//Tabs---------------------------------------
+
+
+
+function regionTabs(cityName) {
+  var i;
+  var x = document.getElementsByClassName("region");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(cityName).style.display = "block";
+  removeActive();
+  addActive(cityName+"-tab");
+}
+
+
+function removeActive() {
+  $("li").each(function () {
+      $(this).removeClass("is-active");
+  });
+}
+function addActive(id){
+     $("#"+id).addClass("is-active");
+};
 
 
