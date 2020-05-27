@@ -13,7 +13,7 @@ $(document).ready(function () {
 
 //carousel
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+    $("#top-carousel").owlCarousel({
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
         items:1,
@@ -23,6 +23,35 @@ $(document).ready(function(){
         autoplayTimeout:5000,
         dots:true,
         lazyLoad:false
+    });
+  });
+$(document).ready(function(){
+    $("#top-other-carousel").owlCarousel({
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        items:2,
+        autoHeight:true,
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        dots:true,
+        lazyLoad:false,
+        slideBy:2,
+    });
+  });
+$(document).ready(function(){
+    $("#dragon-items").owlCarousel({
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        items:4,
+        autoHeight:true,
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        dots:true,
+        lazyLoad:false,
+        slideBy:1,
+        
     });
   });
 
@@ -129,6 +158,16 @@ function regionTabs(cityName) {
   document.getElementById(cityName).style.display = "block";
   removeActive();
   addActive(cityName+"-tab");
+}
+function productTabs(product) {
+  var i;
+  var x = document.getElementsByClassName("products");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(product).style.display = "block";
+  removeActive();
+  addActive(product+"-tab");
 }
 
 
