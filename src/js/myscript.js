@@ -1,15 +1,46 @@
-//navbar
-$(document).ready(function () {
+//my nav
+const navSlide = () =>{
+  const burgur = document.querySelector('.nav-burgur');
+  const nav = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links li');
 
-    // Check for click events on the navbar burger icon
-    $(".navbar-burger").click(function () {
 
-      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-      $(".navbar-burger").toggleClass("is-active");
-      $(".navbar-menu").toggleClass("is-active");
-
-    });
+  burgur.addEventListener('click', () => {
+    //Toggle Nav
+    nav.classList.toggle('nav-active');
+    //Animate Links
+    navLinks.forEach((link, index) => {
+      console.log(link);
+      if  (link.style.animation) {
+        link.style.animation = '';
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5+ 0.3}s`;
+      }
   });
+    
+    
+  });
+
+}
+
+navSlide();
+
+
+
+
+
+// //navbar
+// $(document).ready(function () {
+
+//     // Check for click events on the navbar burger icon
+//     $(".navbar-burger").click(function () {
+
+//       // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+//       $(".navbar-burger").toggleClass("is-active");
+//       $(".navbar-menu").toggleClass("is-active");
+
+//     });
+//   });
 
 //carousel
 $(document).ready(function(){
