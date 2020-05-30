@@ -15,84 +15,35 @@
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
-<body style="background-color: black;">
-    <header>
-      <!-- <nav class="navbar is-dark"  aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="./index.html">
-            <img src="./src/img/Msi_Logo.png" alt="msi-logo" style="width: 112px; height: 28px;">
-          </a>
-
-          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-            data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div id="navbarBasicExample" class="navbar-menu has-background-dark">
-          <div class="navbar-start ">
-            <a href="./index.html" class="navbar-item has-text-white">
-              HOME
-            </a>
-
-            <a href="./about-us.html" class="navbar-item has-text-white">
-              ABOUT US
-            </a>
-
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link has-text-white">
-                PRODUCT
-              </a>
-
-              <div class="navbar-dropdown">
-                <a href="./product.html#case" class="navbar-item has-text-white">
-                  Gaming Cases
-                </a>
-                <a href="./product.html#motherboard" class="navbar-item has-text-white">
-                  Motherboards
-                </a>
-                <a href="./product.html#laptop"class="navbar-item has-text-white">
-                  Gaming Laptop
-                </a>
-                <hr class="navbar-divider">
-                <a class="navbar-item has-text-white">
-                  Others
-                </a>
-              </div>
-            </div>
-            <a href="./contact.html" class="navbar-item has-text-white">
-              CONTACT US
-            </a>
-          </div>
-
-
-        </div>
-      </nav> -->
-
-      <nav>
-        <div class="logo">
-          <img src="./src/img/Msi_Logo.png" alt="nav-logo" style="height: 5vh">
-        </div>
-        <ul class="nav-links">
-          <li><a href="./index.html">HOME</a></li>
-          <li><a href="./about-us.html">ABOUT US</a></li>
-          <li><a href="./product.html">PRODUCT</a></li>
-          <li><a href="./contact.html">CONTACT</a></li>
-        </ul>
-        <div class="nav-burgur">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </nav>
-    </header>
+<body style="background-color: black;" class="site">
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="./src/img/Msi_Logo.png" alt="nav-logo" style="height: 5vh"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./about-us.html">ABOUT US</a></li>
+        <li><a href="./product.html">PRODUCT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+      <div class="nav-burgur">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </header>
+  <div class="margin-head"></div>
     <!-- ---------------------------------------------------------------------------- -->
     <section class="product-section">
         <div class="tabs is-centered is-boxed">
             <ul>
-                <li class="is-active" id="laptop-tab"><a href="#" onclick="productTabs('laptop')">LAPTOPS</a></li>
+                <li class="is-active" id="all-tab"><a href="#" onclick="productTabs('all')">ALL</a></li>
+                <li id="laptop-tab"><a href="#" onclick="productTabs('laptop')">LAPTOPS</a></li>
                 <li id="case-tab"><a href="#" onclick="productTabs('case')">GAMINH CASES</a></li>
                 <li id="motherboard-tab"><a href="#" onclick="productTabs('motherboard')">MOTHERBOARDS</a></li>
                 <li id="other-tab"><a href="#" onclick="productTabs('other')">OTHERS</a></li>
@@ -112,9 +63,9 @@
                                 </figure>
                               </div>
                               <div class="card-content has-text-centered">
-                                <a href="#">GS75 Stealth</a>
+                                <a href="item1.html">GS75 Stealth</a>
                                 <br>
-                                <a href="">(10th Gen Intel® Core™ processor / GeForce RTX™ 20 series)</a>
+                                <a href="item1.html">(10th Gen Intel® Core™ processor / GeForce RTX™ 20 series)</a>
                               </div>
                             </div>
                         </div>

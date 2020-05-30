@@ -16,77 +16,28 @@
 </head>
 
 <body class="has-background-grey-dark site">
-    <header>
-      <!-- <nav class="navbar is-dark"  aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="./index.html">
-            <img src="./src/img/Msi_Logo.png" alt="msi-logo" style="width: 112px; height: 28px;">
-          </a>
-
-          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-            data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div id="navbarBasicExample" class="navbar-menu has-background-dark">
-          <div class="navbar-start ">
-            <a href="./index.html" class="navbar-item has-text-white">
-              HOME
-            </a>
-
-            <a href="./about-us.html" class="navbar-item has-text-white">
-              ABOUT US
-            </a>
-
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a href="./product.html" class="navbar-link has-text-white">
-                PRODUCT
-              </a>
-
-              <div class="navbar-dropdown">
-                <a class="navbar-item has-text-white">
-                  Gaming Cases
-                </a>
-                <a class="navbar-item has-text-white">
-                  Motherboards
-                </a>
-                <a class="navbar-item has-text-white">
-                  Gaming Laptop
-                </a>
-                <hr class="navbar-divider">
-                <a class="navbar-item has-text-white">
-                  Others
-                </a>
-              </div>
-            </div>
-            <a href="./contact.html" class="navbar-item has-text-white">
-              CONTACT US
-            </a>
-          </div>
-
-
-        </div>
-      </nav> -->
-      <nav>
-        <div class="logo">
-          <img src="./src/img/Msi_Logo.png" alt="nav-logo" style="height: 5vh">
-        </div>
-        <ul class="nav-links">
-          <li><a href="./index.html">HOME</a></li>
-          <li><a href="./about-us.html">ABOUT US</a></li>
-          <li><a href="./product.html">PRODUCT</a></li>
-          <li><a href="./contact.html">CONTACT</a></li>
-        </ul>
-        <div class="nav-burgur">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </nav>
-    </header>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="./src/img/Msi_Logo.png" alt="nav-logo" style="height: 5vh"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./about-us.html">ABOUT US</a></li>
+        <li><a href="./product.html">PRODUCT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+      <div class="nav-burgur">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </header>
+  <div class="margin-head"></div>
     <div class="owl-carousel owl-theme" id="top-carousel">
       <div><img src="./src/img/banner-top.jpg" alt="banner-top"></div>
       <div><img src="./src/img/banner-top-2.jpg" alt="banner-top"></div>
@@ -105,7 +56,7 @@
                 <h5>GAMING CASE</h5>
                 <h6>Ingite Your Battlefield</h6>
               </div>
-              <figure class="image is-5by4"><img src="./src/img/top-product-1.jpg" alt="top-product-1"></figure>
+              <a><figure class="image is-5by4"><img src="./src/img/top-product-1.jpg" alt="top-product-1" id="index-case"></figure></a>
             </div>
           </div>
         </div>  
@@ -148,7 +99,6 @@
       </div>
 
     </section>
-
 
   <section class="creattive-section image">
     <div class="creative">
