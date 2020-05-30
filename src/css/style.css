@@ -84,7 +84,15 @@ nav{
 }
 @media screen and (max-width: 767px){
     body{
+        overflow-x: hidden !important;
+    }
+    .site {
         overflow-x: hidden;
+        /* Unnecessary IMHO, uncomment next line to force hidden behavior */
+        /* overflow-x: hidden !important; */
+        /* Additional tunning proposed by the community */
+        position: relative;
+        width: 100%;
     }
     .nav-links{
         position: absolute;
