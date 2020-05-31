@@ -1153,6 +1153,12 @@ article h4 {
     width: 300px;
     font-weight: bold;
     letter-spacing: 10px;
+    box-shadow: -5px 5px 10px rgba(79, 79, 79, 0.607);
+    transition: all 0.3s ease;
+}
+
+.knew-btn:hover{
+    transform: rotate(0deg) scale(1.1) skew(-27deg) translate(0px) !important;
 }
 
 /* ---video popup------- */
@@ -1263,6 +1269,15 @@ article h4 {
     padding-right: 1rem;
     padding-left: 1rem;
     line-height: 2rem;
+}
+
+.bot-product-info .bot-img-ro{
+    transition: all 1s ease;
+}
+
+.bot-product-info .bot-img-ro:hover{
+    transform: rotateY(10deg);
+    transform: rotateZ(-5deg);
 }
 
 
