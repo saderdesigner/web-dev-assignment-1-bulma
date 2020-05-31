@@ -181,7 +181,7 @@ nav {
 .progress-container {
     position: fixed;
     top: 8vh;
-    width: 100%;
+    width: 100vw;
     height: 0.1vh;
     background: #ccc;
 }
@@ -191,7 +191,7 @@ nav {
 .progress-bar {
     height: .1vh;
     background: #df0000;
-    width: 0%;
+    width: 0vw;
 }
 
 /* ---------------------------------------------end NAV-------------------------------------- */
@@ -812,10 +812,14 @@ article h4 {
 }
 
 /* -----------------------------------------------------item.html----------------------------------------------------- */
-
+.item-top{
+    background-image: url(../img/items/spec/4k-bg-crop.jpg);
+    background-size: cover;
+    width: 100%;
+}
 /* Position the image container (needed to position the left and right arrows) */
 
-.container {
+.item-container {
     position: relative;
 }
 
@@ -851,15 +855,10 @@ article h4 {
 /* Position the "next button" to the right */
 
 .next {
-    right: 50%;
+    right: 0%;
     border-radius: 3px 0 0 3px;
 }
 
-@media screen and (max-width: 767px) {
-    .next {
-        right: 0%;
-    }
-}
 
 /* On hover, add a black background color with a little bit see-through */
 
@@ -924,7 +923,6 @@ article h4 {
 }
 
 .about-item {
-    
     list-style: square !important;
     margin-left: 2rem !important;
 }
@@ -946,67 +944,90 @@ article h4 {
 }
 
 /* slider amount */
+
 .slidecontainer {
     margin-top: 1rem !important;
-    width: 50%; /* Width of the outside container */
+    width: 50%;
+    /* Width of the outside container */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-.slidecontainer h4{
+}
+
+.slidecontainer h4 {
     margin-top: 1rem;
     text-align: center;
     padding-left: 2px;
     background-color: red;
     border: 1px solid red;
     display: inline-flex;
-  }
-  #demo2{
-      background-color: white;
-      color:black;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      margin-left: 5px;
-  }
-  
-  /* The slider itself */
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 60%; /* Full-width */
-    height: 5px; /* Specified height */
-    background: #d3d3d3; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-  }
-  
-  
-  /* Mouse-over effects */
-  .slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
-  }
-  
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    width: 10px; /* Set a specific slider handle width */
-    height: 10px; /* Slider handle height */
-    background: red; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #4CAF50; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
+}
 
-  .product-spec{
+#demo2 {
+    background-color: white;
+    color: black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 5px;
+}
+
+/* The slider itself */
+
+.slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 60%;
+    /* Full-width */
+    height: 5px;
+    /* Specified height */
+    background: #d3d3d3;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 10px;
+    /* Set a specific slider handle width */
+    height: 10px;
+    /* Slider handle height */
+    background: red;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #4CAF50;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+/* .product-spec{
       margin-top: 1rem;
   }
 
@@ -1038,21 +1059,247 @@ article h4 {
     padding-left: 10px;
     font-size: 16px;
     color: white;
- }
+ } */
+.product-container{
+    background-image: url(../img/items/spec/cover-bg.jpg);
+    background-size: cover;
+    /* height: 248vw; */
+    width: 100%;
+}
+/* .product-info{
+    position: relative;
+} */
 
- .relate-items-carousel h3{
-     text-align: center;
-     margin-top: 1rem;
-     color: red;
-     font-weight: bold;
-     letter-spacing: 5px;
- }
+.product-info .product-spec h3{
+    font-size: 30px !important;
+    color: white !important;
+}
+.product-info .product-spec p{
+    font-size: 16px !important;
+    color: rgb(168, 168, 168) !important;
+    line-height: 2rem;
+}
 
- .relate-items-carousel .image{
-     border: 1px solid red;
-     border-radius: 5px;
-     margin: 15px;
- }
- .relate-items-carousel .image:hover{
-     transform: scale(1.1);
- }
+/* .product-spec {
+    position: absolute;
+    top: 0;
+} */
+
+.product-spec h3{
+    padding-top: 1rem;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+  }
+
+.top-info .column {
+    margin-top: 2rem !important;
+}
+
+.top-info .column figure{
+    transition: all 0.3s ease;
+    width: 90%;
+}
+
+@media screen and (max-width: 767px){
+    .top-info .column figure{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.top-info .column figure:hover{
+    transform: scale(1.1);
+}
+
+.top-info-content{
+    margin-top: 2rem !important;
+    color: white;
+}
+
+.mt-2rem{
+    margin-top: 2rem !important; 
+}
+
+.top-info-video{
+    color: white;
+    width: 100vw;
+    overflow: hidden !important;
+    padding-right: 10vw !important;
+}
+
+
+
+.top-info-video .video-text{
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}
+
+@media screen and (max-width: 1023px){
+    .top-info-video{
+        padding-right: 0vw !important;
+    }
+    .top-info-video .video-text{
+        padding-left: 5% !important;
+        padding-right: 0% !important;
+    }
+}
+
+.knew-btn{
+    background-image: url(../img/items/spec/kv-video-bg.jpg);
+    transform: rotate(0deg) scale(1) skew(-27deg) translate(0px) !important;
+    width: 300px;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+/* ---video popup------- */
+.video-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 30; /* Sit on top */
+    padding-top: 15vh; /* Location of the box */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .video-modal-content {
+    display: inline-block;
+    /* background-color: #00000031; */
+    /* margin: auto; */
+    /* padding: 20px; */
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: auto;
+  }
+  
+  .video-modal-content video{
+    width: 80vw;
+  }
+  /* The Close Button */
+  .video-close {
+    position: absolute;
+    z-index: 31;
+    top: 0;
+    right: 0;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .video-close:hover,
+  .video-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+/* --------------------- */
+
+
+.top-info-video .video-img{
+    overflow: hidden !important;
+    transform: rotate(0deg) scale(1) skew(-27deg) translate(0px) !important;
+    width: fit-content;
+    margin-top: 5rem !important;
+}
+
+@media screen and (max-width: 1023px){
+    .top-info-video .video-img{
+        width: 60%;
+        margin: 2rem auto !important;
+    }
+}
+.top-info-video .video-img .columns{
+    width: 100%;
+}
+
+.top-info-video .video-img img{
+    width: 90%;
+    overflow: hidden;
+    /* transform: rotate(0deg) scale(1) skew(-27deg) translate(0px) !important; */
+    box-shadow: 5px 5px 30px rgb(0, 0, 0);
+    transition: all 0.3s ease;
+    
+}
+.top-info-video .video-img img:hover{
+    box-shadow: 5px 5px 30px rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+
+
+.img-3{
+    margin-top: -17% !important;
+    
+}
+
+.img-2{
+    margin-top: 20% !important;
+    
+}
+.img-4{
+    margin-top: 3% !important;
+    margin-bottom: 50px !important;
+}
+
+.bot-product-info{
+    width: 90vw;
+    margin: auto;
+    font-size: 20px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    line-height: 2rem;
+}
+
+
+
+.bot-product-info .bot-product-info-content{
+    margin-left: -20% !important;
+}
+.bot-product-info .bot-product-info-content span{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 3rem;
+    color: white;
+}
+
+@media screen and (max-width: 1023px){
+    .bot-product-info .bot-product-info-content{
+        margin-left: 0% !important;
+    }
+}
+
+
+
+/* ----------------------- */
+.relate-items-carousel h3 {
+    text-align: center;
+    margin-top: 1rem;
+    color: red;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.relate-items-carousel .image {
+    border: 1px solid red;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.relate-items-carousel .image:hover {
+    transform: scale(1.1);
+}
