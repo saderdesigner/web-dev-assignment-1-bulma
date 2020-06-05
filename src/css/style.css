@@ -504,6 +504,11 @@ hr {
 
 /* ---------About us---------- */
 
+.about-us {
+    background-image: url(../img/items/spec/cover-bg.jpg);
+    background-size: contain;
+}
+
 .left-menu h1 {
     color: white;
     margin-top: 2rem !important;
@@ -538,7 +543,7 @@ article p {
     text-align: justify;
     padding-right: 1rem;
     padding-left: 1rem;
-    color: #797979;
+    color: #a8a8a8;
     font-weight: 500;
     line-height: 1rem;
 }
@@ -562,6 +567,7 @@ article h4 {
     font-size: 16px;
     padding-left: 1rem;
     padding-right: 1rem;
+    height: 100% !important;
 }
 
 .contact-us h1 {
@@ -601,8 +607,9 @@ article h4 {
 }
 
 .contact-us .content {
-    height: 60vh;
+    height: 100% !important;
     color: #797979;
+    margin-bottom: 1rem;
 }
 
 .country h4, .country h6 {
@@ -660,7 +667,6 @@ article h4 {
     border-color: red;
     cursor: pointer;
 }
-
 
 .box-card:hover .card::after {
     width: 100%;
@@ -813,11 +819,13 @@ article h4 {
 }
 
 /* -----------------------------------------------------item.html----------------------------------------------------- */
-.item-top{
+
+.item-top {
     background-image: url(../img/items/spec/4k-bg-crop.jpg);
     background-size: cover;
     width: 100%;
 }
+
 /* Position the image container (needed to position the left and right arrows) */
 
 .item-container {
@@ -859,7 +867,6 @@ article h4 {
     right: 0%;
     border-radius: 3px 0 0 3px;
 }
-
 
 /* On hover, add a black background color with a little bit see-through */
 
@@ -1061,21 +1068,24 @@ article h4 {
     font-size: 16px;
     color: white;
  } */
-.product-container{
+
+.product-container {
     background-image: url(../img/items/spec/cover-bg.jpg);
     background-size: cover;
     /* height: 248vw; */
     width: 100%;
 }
+
 /* .product-info{
     position: relative;
 } */
 
-.product-info .product-spec h3{
+.product-info .product-spec h3 {
     font-size: 30px !important;
     color: white !important;
 }
-.product-info .product-spec p{
+
+.product-info .product-spec p {
     font-size: 16px !important;
     color: rgb(168, 168, 168) !important;
     line-height: 2rem;
@@ -1086,69 +1096,67 @@ article h4 {
     top: 0;
 } */
 
-.product-spec h3{
+.product-spec h3 {
     padding-top: 1rem;
     text-align: center;
     color: red;
     font-weight: bold;
     letter-spacing: 5px;
     margin-bottom: 5px;
-  }
+}
 
 .top-info .column {
     margin-top: 2rem !important;
 }
 
-.top-info .column figure{
+.top-info .column figure {
     transition: all 0.3s ease;
     width: 90%;
 }
 
-@media screen and (max-width: 767px){
-    .top-info .column figure{
+@media screen and (max-width: 767px) {
+    .top-info .column figure {
         width: 70%;
         margin: 0 auto;
     }
 }
 
-.top-info .column figure:hover{
+.top-info .column figure:hover {
     transform: scale(1.1);
 }
 
-.top-info-content{
+.top-info-content {
     margin-top: 2rem !important;
     color: white;
 }
 
-.mt-2rem{
-    margin-top: 2rem !important; 
+.mt-2rem {
+    margin-top: 2rem !important;
 }
 
-.top-info-video{
+.top-info-video {
     color: white;
     width: 100vw;
     overflow: hidden !important;
     padding-right: 10vw !important;
 }
 
-
-
-.top-info-video .video-text{
+.top-info-video .video-text {
     padding-left: 5% !important;
     padding-right: 5% !important;
 }
 
-@media screen and (max-width: 1023px){
-    .top-info-video{
+@media screen and (max-width: 1023px) {
+    .top-info-video {
         padding-right: 0vw !important;
     }
-    .top-info-video .video-text{
+    .top-info-video .video-text {
         padding-left: 5% !important;
         padding-right: 0% !important;
     }
 }
 
-.knew-btn{
+.knew-btn {
     background-image: url(../img/items/spec/kv-video-bg.jpg);
     transform: rotate(0deg) scale(1) skew(-27deg) translate(0px) !important;
     width: 300px;
@@ -1158,28 +1166,39 @@ article h4 {
     transition: all 0.3s ease;
 }
 
-.knew-btn:hover{
+.knew-btn:hover {
     transform: rotate(0deg) scale(1.1) skew(-27deg) translate(0px) !important;
 }
 
 /* ---video popup------- */
+
 .video-modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 30; /* Sit on top */
-    padding-top: 15vh; /* Location of the box */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 30;
+    /* Sit on top */
+    padding-top: 15vh;
+    /* Location of the box */
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .video-modal-content {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.video-modal-content {
     display: inline-block;
     /* background-color: #00000031; */
     /* margin: auto; */
@@ -1188,13 +1207,15 @@ article h4 {
     height: auto;
     position: relative;
     margin: auto;
-  }
-  
-  .video-modal-content video{
+}
+
+.video-modal-content video {
     width: 80vw;
-  }
-  /* The Close Button */
-  .video-close {
+}
+
+/* The Close Button */
+
+.video-close {
     position: absolute;
     z-index: 31;
     top: 0;
@@ -1203,67 +1224,61 @@ article h4 {
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .video-close:hover,
-  .video-close:focus {
+}
+
+.video-close:hover, .video-close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
-
-
+}
 
 /* --------------------- */
 
-
-.top-info-video .video-img{
+.top-info-video .video-img {
     overflow: hidden !important;
     transform: rotate(0deg) scale(1) skew(-27deg) translate(0px) !important;
     width: fit-content;
     margin-top: 5rem !important;
 }
 
-@media screen and (max-width: 1023px){
-    .top-info-video .video-img{
+@media screen and (max-width: 1023px) {
+    .top-info-video .video-img {
         width: 60%;
         margin: 2rem auto !important;
     }
 }
-.top-info-video .video-img .columns{
+
+.top-info-video .video-img .columns {
     width: 100%;
 }
 
-.top-info-video .video-img img{
+.top-info-video .video-img img {
     width: 90%;
     overflow: hidden;
     /* transform: rotate(0deg) scale(1) skew(-27deg) translate(0px) !important; */
     box-shadow: 5px 5px 30px rgb(0, 0, 0);
     transition: all 0.3s ease;
-    
 }
-.top-info-video .video-img img:hover{
+
+.top-info-video .video-img img:hover {
     box-shadow: 5px 5px 30px rgb(0, 0, 0);
     transform: scale(1.1);
 }
 
-
-
-.img-3{
+.img-3 {
     margin-top: -17% !important;
-    
 }
 
-.img-2{
+.img-2 {
     margin-top: 20% !important;
-    
 }
-.img-4{
+
+.img-4 {
     margin-top: 3% !important;
     margin-bottom: 50px !important;
 }
 
-.bot-product-info{
+.bot-product-info {
     width: 90vw;
     margin: auto;
     font-size: 20px;
@@ -1272,48 +1287,65 @@ article h4 {
     line-height: 2rem;
 }
 
-.bot-product-info .bot-img-ro{
+.bot-product-info .bot-img-ro {
     transition: all 1s ease;
 }
 
-.bot-product-info .bot-img-ro:hover{
+.bot-product-info .bot-img-ro:hover {
     transform: rotateY(10deg);
     transform: rotateZ(-5deg);
 }
 
-
-
-.bot-product-info .bot-product-info-content{
+.bot-product-info .bot-product-info-content {
     margin-left: -20% !important;
 }
-.bot-product-info .bot-product-info-content span{
+
+.bot-product-info .bot-product-info-content span {
     font-size: 40px;
     font-weight: bold;
     line-height: 3rem;
     color: white;
 }
 
-@media screen and (max-width: 1023px){
-    .bot-product-info .bot-product-info-content{
+@media screen and (max-width: 1023px) {
+    .bot-product-info .bot-product-info-content {
         margin-left: 0% !important;
     }
 }
 
-
-
 /* ----------------------- */
+
+.relate-items-carousel {
+    margin-bottom: 1rem;
+}
+
 .relate-items-carousel h3 {
     text-align: center;
     margin-top: 1rem;
     color: red;
     font-weight: bold;
     letter-spacing: 5px;
+    margin-bottom: 1rem;
+}
+
+.relate-items-carousel .card {
+    background-color: transparent;
+    border: 1px solid red;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 5px;
+}
+
+.relate-items-carousel .card .card-footer-item {
+    padding: 0 !important;
+    justify-content: space-around;
 }
 
 .relate-items-carousel .image {
-    border: 1px solid red;
+    border: 1px solid transparent;
     border-radius: 5px;
-    margin: 15px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 .relate-items-carousel .image:hover {

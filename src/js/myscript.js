@@ -1,5 +1,5 @@
 //my nav
-const navSlide = () =>{
+const navSlide = () => {
   const burgur = document.querySelector('.nav-burgur');
   const nav = document.querySelector('.nav-links');
   const navLinks = document.querySelectorAll('.nav-links li');
@@ -10,16 +10,16 @@ const navSlide = () =>{
     nav.classList.toggle('nav-active');
     //Animate Links
     navLinks.forEach((link, index) => {
-      if  (link.style.animation) {
+      if (link.style.animation) {
         link.style.animation = '';
       } else {
         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5}s`;
       }
-  });
-  //Burgur Animation
-  burgur.classList.toggle('toggle');
-    
-    
+    });
+    //Burgur Animation
+    burgur.classList.toggle('toggle');
+
+
   });
 
 }
@@ -27,7 +27,7 @@ const navSlide = () =>{
 navSlide();
 
 //scroll indicatior
-window.onscroll = function() {indicatior()};
+window.onscroll = function () { indicatior() };
 
 function indicatior() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -42,73 +42,85 @@ function indicatior() {
 
 
 //carousel
-$(document).ready(function(){
-    $("#top-carousel").owlCarousel({
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
-        items:1,
-        autoHeight:true,
-        loop:true,
-        autoplay:true,
-        autoplayTimeout:5000,
-        dots:true,
-        lazyLoad:false
-    });
+$(document).ready(function () {
+  $("#top-carousel").owlCarousel({
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    items: 1,
+    autoHeight: true,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    dots: true,
+    lazyLoad: false
   });
-$(document).ready(function(){
-    $("#top-other-carousel").owlCarousel({
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
-        items:2,
-        autoHeight:true,
-        loop:true,
-        autoplay:true,
-        autoplayTimeout:3000,
-        dots:true,
-        lazyLoad:false,
-        slideBy:2,
-    });
+});
+$(document).ready(function () {
+  $("#top-other-carousel").owlCarousel({
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    items: 2,
+    autoHeight: true,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    dots: true,
+    lazyLoad: false,
+    slideBy: 2,
   });
-$(document).ready(function(){
-    $("#dragon-items").owlCarousel({
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
-        items:4,
-        autoHeight:true,
-        loop:true,
-        autoplay:true,
-        autoplayTimeout:3000,
-        dots:true,
-        lazyLoad:false,
-        slideBy:1,
-        
-    });
+});
+$(document).ready(function () {
+  $("#dragon-items").owlCarousel({
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    responsive: {
+      0: {
+        items: 2,
+      },
+      767: {
+        items: 3,
+      },
+      1023: {
+        items: 4,
+      },
+    },
+    autoHeight: true,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    dots: true,
+    lazyLoad: false,
+    slideBy: 1,
+
   });
-$(document).ready(function(){
-    $("#relate-items").owlCarousel({
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
-        responsive: {
-          0: {
-            items: 4
-          },
-          767: {
-            items: 4
-          },
-          1023: {
-            items: 6
-          },
-        },
-        autoHeight:true,
-        loop:true,
-        autoplay:true,
-        autoplayTimeout:3000,
-        dots:true,
-        lazyLoad:false,
-        slideBy:1,
-        
-    });
+});
+$(document).ready(function () {
+  $("#relate-items").owlCarousel({
+    animateOut: 'bounceOutLeft',
+    animateIn: 'bounceInRight',
+    responsive: {
+      0: {
+        items: 1,
+        dots: false,
+      },
+      767: {
+        items: 3,
+        dots: true,
+      },
+      1023: {
+        items: 4,
+        dots: true,
+      },
+    },
+    autoHeight: true,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    lazyLoad: false,
+    slideBy: 1,
+
   });
+});
 
 
 //Model IMG---------------------------------------------------
@@ -125,39 +137,39 @@ var img_7 = document.getElementById("iso-7");
 var img_8 = document.getElementById("iso-8");
 var img_9 = document.getElementById("iso-9");
 var modalImg = document.getElementById("img01");
-img_1.onclick = function(){
+img_1.onclick = function () {
   modal.style.display = "block";
   modalImg.src = this.src;
 }
-img_2.onclick = function(){
+img_2.onclick = function () {
   modal.style.display = "block";
   modalImg.src = this.src;
 }
-img_3.onclick = function(){
+img_3.onclick = function () {
   modal.style.display = "block";
   modalImg.src = this.src;
 }
-img_4.onclick = function(){
+img_4.onclick = function () {
   modal.style.display = "block";
   modalImg.src = this.src;
 }
-img_5.onclick = function(){
+img_5.onclick = function () {
   modal.style.display = "block";
   modalImg.src = this.src;
 }
-img_6.onclick = function(){
+img_6.onclick = function () {
   modal.style.display = "block";
   modalImg.src = this.src;
 }
-img_7.onclick = function(){
+img_7.onclick = function () {
   modal.style.display = "block";
   modalImg.src = this.src;
 }
-img_8.onclick = function(){
+img_8.onclick = function () {
   modal.style.display = "block";
   modalImg.src = this.src;
 }
-img_9.onclick = function(){
+img_9.onclick = function () {
   modal.style.display = "block";
   modalImg.src = this.src;
 }
@@ -166,7 +178,7 @@ img_9.onclick = function(){
 var span = document.getElementsByClassName("close")[0];
 
 
-span.onclick = function() { 
+span.onclick = function () {
   modal.style.display = "none";
 }
 
@@ -175,11 +187,11 @@ span.onclick = function() {
 // SmoothScroll----------------------------------------------
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+    e.preventDefault();
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
   });
 });
 
@@ -187,7 +199,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 // Stick memu-------------------------------------------------
-window.onscroll = function() {smoothScroll();indicatior()};
+window.onscroll = function () { smoothScroll(); indicatior() };
 
 var navbar = document.getElementById("menu-option");
 var sticky = navbar.offsetTop;
@@ -211,7 +223,7 @@ function regionTabs(cityName) {
   }
   document.getElementById(cityName).style.display = "block";
   removeActive();
-  addActive(cityName+"-tab");
+  addActive(cityName + "-tab");
 }
 function productTabs(product) {
   var i;
@@ -228,17 +240,17 @@ function productTabs(product) {
   else
     document.getElementById(product).style.display = "block";
   removeActive();
-  addActive(product+"-tab");
+  addActive(product + "-tab");
 }
 
 
 function removeActive() {
   $("li").each(function () {
-      $(this).removeClass("is-active");
+    $(this).removeClass("is-active");
   });
 }
-function addActive(id){
-     $("#"+id).addClass("is-active");
+function addActive(id) {
+  $("#" + id).addClass("is-active");
 };
 
 
@@ -262,16 +274,16 @@ function showSlides(n) {
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
   // var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
   // captionText.innerHTML = dots[slideIndex-1].alt;
 };
 
